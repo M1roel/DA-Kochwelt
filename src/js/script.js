@@ -17,17 +17,28 @@ async function includeHTML() {
 }
 
 function addAll() {
-    for (let i = 0; i < recipe.ingriedients.length; i++) {
-        const elem = recipe.ingriedients[i];
-        addIngredient(elem.name,elem.size,elem.unit);
+    let tableContainer = document.getElementById('table');
+    tableContainer.innerHTML='';
+
+    let port = document.getElementById('portions').value;
+    portions = parseInt(port, 10)
+
+    for (let i = 0; i < recipe.ingredients.length; i++) {
+        const elem = recipe.ingredients[i];
+        const calcedSize = calcSize(elem.size, portions);
+        addIngredient(calcedSize,elem.unit,elem.name);
     }
 }
 
-function addIngredient(name, size, unit) {
+function addIngredient(size, unit, name) {
     document.getElementById('table').innerHTML += `
     <tr>
     <td>${size} ${unit} ${name}</td>
     </tr>`;
+}
+
+function calcSize(size, portions) {
+    return size * portions;
 }
 
 window.onload = function() {

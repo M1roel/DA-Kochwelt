@@ -5,7 +5,7 @@ const data = {
     totalduration: '45min',
     preparationsduration: '30 min',
     image: '<img src="./img/brownies">',
-    ingriedients: [
+    ingredients: [
         {
             name: "Mehl",
             unit: "g",
@@ -17,7 +17,7 @@ const data = {
             size: 200
         },
         {
-            ingriedien: "Kakao-Pulver",
+            name: "Kakao-Pulver",
             unit: "EL",
             size: 1
         },
