@@ -41,9 +41,19 @@ function calcSize(size, portions) {
     return size * portions;
 }
 
+function duration() {
+    let prepElements = document.querySelectorAll('.prepDuration');
+    prepElements.forEach(element => {
+        element.innerHTML = `Arbeitszeit: ${recipe.preparationsduration}`;
+    });
+    let total = document.getElementById('totalDuration');
+    total.innerHTML = `Gesamtzeit: ${recipe.totalduration}`;
+}
+
 window.onload = function() {
     includeHTML();
     addAll();
+    duration();
     changeTitle();
 }
 

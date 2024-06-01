@@ -304,7 +304,7 @@ table tbody:nth-child(even) {
 }
 
 .instructions-section h2 {
-    padding-bottom: 16px;
+    font-size: 16px;
 }
 
 .instruction-container {

@@ -2,8 +2,8 @@ const data = {
     recipename: 'Saftige Brownies',
     author: 'Kieran',
     date: '30.05.2024',
-    totalduration: '45min',
-    preparationsduration: '30 min',
+    totalduration: '45 Min.',
+    preparationsduration: '30 Min.',
     image: '<img src="./img/brownies">',
     ingredients: [
         {
