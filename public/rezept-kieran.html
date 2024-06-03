@@ -1,83 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link href="../src/css/content.css" rel="stylesheet" type="text/css">
+    <link href="../src/css/content.css" rel="stylesheet" type="text/css" />
     <script src="../src/js/data.js"></script>
     <script src="../src/js/script.js"></script>
-    
-    <title>Kochwelt</title>
-</head>
- 
-<body>
 
-    <div w3-include-html="../src/templates/header.html"> </div>
+    <title>Kochwelt - Saftige Brownies</title>
+  </head>
+
+  <body>
+    <div w3-include-html="../src/templates/header.html"></div>
 
     <section class="top-section">
-        <h1>Saftige Brownies</h1>
-        <img class="top-image" src="img/salad.jpg" alt="salat">
-        
+      <h1>Saftige Brownies</h1>
+      <img class="top-image" src="img/brownies.png" alt="brownies" />
     </section>
 
     <section class="data-section">
-        <div class="data-container">
-            <div class="data-field">
-                <img src="img/clock-regular.svg" alt="clock-icon">
-                <div class="prepDuration"></div>
-            </div>
-            <div class="data-field">
-                <img src="img/brain-solid.svg" alt="clock-icon">
-                simpel
-            </div>
-            <div class="data-field">
-                <img src="img/calendar-alt-regular.svg" alt="clock-icon">
-                28.09.2020
-            </div>
+      <div class="data-container">
+        <div class="data-field">
+          <img src="img/clock-regular.svg" alt="clock-icon" />
+          <div class="prepDuration"></div>
         </div>
-        <div class="separator"></div>
+        <div class="data-field">
+          <img src="img/brain-solid.svg" alt="clock-icon" />
+          simpel
+        </div>
+        <div class="data-field">
+          <img src="img/calendar-alt-regular.svg" alt="clock-icon" />
+          28.09.2020
+        </div>
+      </div>
+      <div class="separator"></div>
     </section>
-    
+
     <section class="recipe-section">
-        <div class="portion-container">
-            <label class="p-r-16" >Zutaten für</label>
-            <input id="portions" class="input" type="number" min="1" max="20" value="1"></input>
-            <button class="p-button" onclick="addAll()">Portionen</button>
-        </div>
+      <div class="portion-container">
+        <label class="p-r-16">Zutaten für</label>
+        <input
+          id="portions"
+          class="input"
+          type="number"
+          min="1"
+          max="20"
+          value="2"
+        />
+        <button class="p-button" onclick="addAll()">Portionen</button>
+      </div>
 
-        <table id="table">
-
-        </table>
+      <table id="table"></table>
     </section>
 
     <section class="instructions-section">
-        <h2>Zubereitung</h2>
-        <div class="instruction-container">
-            <div class="data-field">
-                <img src="img/clock-regular.svg" alt="clock-icon">
-                <div class="prepDuration"></div>
-            </div>
-            <div class="data-field">
-                <img src="img/clock-regular.svg" alt="clock-icon">
-                <div id="totalDuration"></div>
-            </div>
+      <h2>Zubereitung</h2>
+      <div class="instruction-container">
+        <div class="data-field">
+          <img src="img/clock-regular.svg" alt="clock-icon" />
+          <div class="prepDuration"></div>
         </div>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur temporibus enim quae illo inventore dicta tempora, dolores obcaecati. Voluptatum voluptas nihil possimus perferendis illo pariatur optio aperiam quos totam voluptatem?
-        </p>
+        <div class="data-field">
+          <img src="img/clock-regular.svg" alt="clock-icon" />
+          <div id="totalDuration"></div>
+        </div>
+      </div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+        temporibus enim quae illo inventore dicta tempora, dolores obcaecati.
+        Voluptatum voluptas nihil possimus perferendis illo pariatur optio
+        aperiam quos totam voluptatem?
+      </p>
     </section>
 
     <section class="creator-section">
-        <h3>Rezept erstellt von </h3>
-        <div class="creator-container">
-            <img class="icon-profil" src="img/profile.png">
-            <p id="name">Kieran</p>
-        </div>
+      <h3>Rezept erstellt von</h3>
+      <div class="creator-container">
+        <img class="icon-profil" src="img/profile.png" />
+        <p id="name">Kieran</p>
+      </div>
     </section>
 
     <div w3-include-html="../src/templates/footer.html"></div>
-</body>
- 
+  </body>
 </html>
