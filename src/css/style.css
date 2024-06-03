@@ -56,6 +56,7 @@ button {
     background-color: #008001;
     color: white;
     border: none;
+    cursor: pointer;
 }
 
 .header-logo {
@@ -120,7 +121,8 @@ button {
     height: 320px;
     background-color: #ffffff;
     padding-right: 112px;
-    padding-left: 112px;
+    padding-left: 112px;    
+    background-color: rgba(0, 0, 0, 0.05 );
 }
 
 .recipe-section h2 {
@@ -179,172 +181,4 @@ button {
     height: 160px;
     width: 160px;
     border-radius: 8px;
-}
-
-
-/* content.html */
-
-.top-section {
-    display: flex;
-    text-align: left;
-    flex-direction: column;
-    padding-right: 112px;
-    padding-left: 112px;
-    padding-bottom: 12px;
-    padding-top: 20px;
-}
-
-.top-section h1 {
-    font-size: 32px;
-    font-weight: 500;
-}
-
-.top-image {
-    height: 200px;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 6px;
-}
-
-.data-section {
-    display: flex;
-    flex-direction: column;
-    padding-right: 112px;
-    padding-left: 112px;
-    padding-bottom: 20px;
-
-}
-
-.data-container {
-    display: flex;
-    flex-direction: row;
-}
-
-.data-field {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-right: 16px;
-    margin-bottom: 56px;
-    margin-top: 16px;
-    padding: 5px 9px;
-    background-color: #EFEFEF;
-    border-radius: 6px;
-    font-weight: 200;
-}
-
-.data-field img{
-    width: 12px;
-    height: 12px;
-    padding-right: 10px;
-}
-
-.separator {
-    height: 1px;
-    padding-left: 112px;
-    padding-right: 112px;
-    background-color: #EFEFEF;
-    margin-bottom: 8px;
-}
-
-.recipe-section {
-    height: 100%;
-    padding-bottom: 20px;
-    background-color: rgba(0, 0, 0, 0.1);
-}
-
-.portion-container {
-    display: flex;
-    align-items: center;
-    padding-bottom: 8px;
-    padding-top: 8px;
-}
-
-
-
-table {
-    font-weight: 200;
-    border-collapse: collapse;
-    width: 100%;
-}
-
-table td,
-table th {
-    border-radius: 6px;
-    padding: 12px;
-    padding-left: 32px;
-}
-
-table tbody {
-    background-color: #EFEFEF;
-}
-
-table tbody:nth-child(even) {
-    background-color: #ffffff;
-}
-
-.p-r-16 {
-    padding-right: 16px;
-}
-
-.input {
-    height: 32px;
-    border-bottom-left-radius: 5px;
-    border-top-left-radius: 5px;
-    border: 1px solid #EFEFEF;
-}
-
-.p-button {
-    height: 36px;
-}
-
-.instructions-section {
-    padding-top: 32px;
-    padding-left: 112px;
-    padding-right: 112px;
-}
-
-.instructions-section h2 {
-    font-size: 16px;
-}
-
-.instruction-container {
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    flex-direction: row;
-}
-
-.instruction-container p {
-    padding-top: 12px;
-}
-
-.creator-section {
-    padding-top: 32px;
-    padding-left: 112px;
-    padding-right: 112px;
-    padding-bottom: 32px;
-}
-
-.creator-section h3 {
-    font-weight: 500;
-}
-
-.creator-container {
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    flex-direction: row;
-    margin-top: 32px;
-}
-
-.icon-profil {
-    margin-right: 32px;
-    border-radius: 50%;
-    height: 75px;
-}
-
-#name {
-    font-size: 26px;
-    font-weight: 150;
 }
