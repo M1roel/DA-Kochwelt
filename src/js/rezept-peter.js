@@ -1,10 +1,10 @@
-const data_peter = {
+const data = {
     recipename: "Brokkoli-Blumenkohl-Gratin",
     author: "Peter",
     date: "03.06.2024",
     totalduration: "40 Min.",
     preparationsduration: "30 Min.",
-    image: '<img src="../../public/img/gratin.jpg">',
+    image: '<img src="../../public/img/gratin.png">',
     ingredients: [
       {
         name: "Brokkoli",
