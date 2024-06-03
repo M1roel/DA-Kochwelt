@@ -187,3 +187,27 @@ button {
     width: 160px;
     border-radius: 8px;
 }
+
+#weiterlesen-btn {
+    height: 30px;
+}
+
+.pfannewok {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 32px 64px;
+}
+
+.pfannewok img {
+    width: 320px;
+    margin-bottom: 32px;
+}
+
+.pfannewok h2, 
+.pfannewok h3 {
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
