@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link href="../src/css/style.css" rel="stylesheet" type="text/css">
-    <link href="../src/css/kontakt.css" rel="stylesheet" type="text/css">
-    <script src="../src/js/data.js"></script>
-    <script src="../src/js/script.js"></script>
+    <link href="../src/css/contact.css" rel="stylesheet" type="text/css">
+    <script src="../src/js/w3c.js"></script>
+    <script src="../src/js/contact.js"></script>
     
     <title>Kontakt</title>
 </head>
@@ -17,14 +17,14 @@
 
     <div w3-include-html="../src/templates/header.html"> </div>
 
-    <form class="kontakt">
+    <form class="kontakt" onsubmit="return handleSubmit(event)">
         <label for="name">Name: </label><br>
         <input type="text" id="name" name="name" placeholder="Ihr Name..."><br>
         <label for="mail">eMail: </label><br>
         <input type="text" id="mail" name="mail" placeholder="Ihre Mail-Adresse... "><br>
         <label for="message">Nachricht: </label><br>
         <textarea type="text" id="message" rows="10" name="message" placeholder="Ihre Nachricht an uns..."></textarea><br>
-        <input type="submit" value="submit" onclick="clear()">
+        <input type="submit" value="submit">
     </form>
 
     <div id="contactinfo" class="contact-info d-none"></div> 

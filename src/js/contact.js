@@ -1,3 +1,8 @@
+function handleSubmit(event) {
+    event.preventDefault();
+    clear();
+}
+
 function clear() {
     const contactName = document.getElementById('name');
     const contactMail = document.getElementById('mail');
