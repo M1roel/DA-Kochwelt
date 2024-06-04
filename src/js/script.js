@@ -61,3 +61,13 @@ window.onload = function() {
 function changeTitle() {
     document.getElementsByTagName('title')[0].innerHTML = `Kochwelt - ${recipe.recipename}`
 }
+
+function clear() {
+    const contactName = document.getElementById('name');
+    const contactMail = document.getElementById('mail');
+    const contactMessage = document.getElementById('message');
+
+    contactName.value = '';
+    contactMail.value = '';
+    contactMessage.value = '';    
+}
