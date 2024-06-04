@@ -9,14 +9,16 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 118px 50px;
+    margin: 108px 50px;
 }
 
-.kontakt textarea {    
+.kontakt textarea,
+.kontakt input {    
     font-family: "Raleway";
     margin: 10px 0;
     padding: 10px;
     resize: none;
-    border-radius: 3px;
+    border-radius: 5px;
     width: 200px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   }
