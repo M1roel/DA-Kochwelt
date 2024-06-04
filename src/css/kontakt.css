@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url("../fonts/Raleway-Regular.ttf") format("woff2");
+    font-weight: 400;
+  }
+
+.kontakt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 118px 50px;
+}
+
+.kontakt textarea {    
+    font-family: "Raleway";
+    margin: 10px 0;
+    padding: 10px;
+    resize: none;
+    border-radius: 3px;
+    width: 200px;
+  }
