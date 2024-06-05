@@ -1,7 +1,16 @@
 function handleSubmit(event) {
     event.preventDefault();
-    clear();
+    const contactName = document.getElementById('name').value.trim();
+    const contactMail = document.getElementById('mail').value.trim();
+    const contactMessage = document.getElementById('message').value.trim();
+
+    if (contactName && contactMail && contactMessage) {
+        clear();
+    } else {
+        showInfo('Bitte alle Felder ausfüllen!', 'error');
+    }
 }
+
 
 function clear() {
     const contactName = document.getElementById('name');
@@ -11,15 +20,25 @@ function clear() {
     contactName.value = '';
     contactMail.value = '';
     contactMessage.value = '';
-    showInfo('Ihre Nachricht wurde erfolgreich übermittelt.')   
+    showInfo('Ihre Nachricht wurde erfolgreich übermittelt.', 'success')   
 }
 
-function showInfo(message) {
+
+function showInfo(message, type) {
     const info = document.getElementById('contactinfo');
     info.textContent = message;
     info.classList.remove('d-none');
     setTimeout(() => info.classList.add('d-none'), 1500);
+
+    if (type === 'error') {
+        info.style.backgroundColor = '#ffdddd';
+        info.style.color = '#d8000c';
+    } else if (type === 'success') {
+        info.style.backgroundColor = '#ddffdd';
+        info.style.color = '#00d86c';
+    }
 }
+
 
 window.onload = function() {
     includeHTML();
