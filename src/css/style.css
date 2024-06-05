@@ -166,3 +166,60 @@ button {
 .pfannewok li {
     text-align: left;
 }
+
+@media (max-width: 800px) {
+    .recipe-section {
+        flex-direction: column;
+        height: auto;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .more-recipe-container {
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    .more-reciep-inner-container {
+        margin-bottom: 20px;
+    }
+
+    .info-section {
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .info-container {
+        flex-direction:column-reverse;
+        align-items: center;
+        text-align: center;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media (max-width: 700px) {
+    .main-container {
+        flex-direction: column;
+        margin: 100px 20px;
+    }
+
+    .main-container-text {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+}
+
+@media (max-width: 470px) {
+    .recipe-section h2 {
+        font-size: 1.2em;
+    }
+
+    .info-section h2 {
+        font-size: 1.2em;
+    }
+}

@@ -11,3 +11,14 @@ footer {
 .svg-icons svg {
     cursor: pointer;
 }
+
+@media (max-width: 700px) {
+    footer {
+        width: auto;
+        padding: 0;
+    }
+
+    .footer-left img {
+        display: none;
+    }
+}

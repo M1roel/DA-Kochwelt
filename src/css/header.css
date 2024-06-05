@@ -50,7 +50,7 @@ header {
     border: none;
     cursor: pointer;
     padding: 10px;
-    margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 .navLinks.open {
@@ -81,7 +81,7 @@ header {
 
 @media (max-width: 400px) {
     header {
-        flex-direction: row;
+        flex-direction: column;
     }
     .navLinks {
         display: none;
