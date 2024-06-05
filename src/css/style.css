@@ -181,6 +181,7 @@ button:hover {
 .pfannewok img {
   width: 320px;
   margin-bottom: 32px;
+  border-radius: 8px;
 }
 
 .pfannewok h2,
