@@ -188,7 +188,15 @@ button {
     border-radius: 8px;
 }
 
+.info-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 #weiterlesen-btn {
+    margin-top: 30px;
     height: 30px;
 }
 
