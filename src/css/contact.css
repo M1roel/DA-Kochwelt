@@ -24,6 +24,14 @@
     cursor: pointer;
   }
 
+  .button {
+    padding: 8px 32px;
+    background-color: #008001;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
   .d-none {
     display: none;
   }
