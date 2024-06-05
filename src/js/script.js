@@ -1,6 +1,8 @@
 let recipe = data;
 
+
 console.log(recipe.recipename)
+
 
 function addAll() {
     let tableContainer = document.getElementById('table');
@@ -16,6 +18,7 @@ function addAll() {
     }
 }
 
+
 function addIngredient(size, unit, name) {
     document.getElementById('table').innerHTML += `
     <tr>
@@ -23,9 +26,11 @@ function addIngredient(size, unit, name) {
     </tr>`;
 }
 
+
 function calcSize(size, portions) {
     return size * portions;
 }
+
 
 function duration() {
     let prepElements = document.querySelectorAll('.prepDuration');
@@ -35,6 +40,7 @@ function duration() {
     let total = document.getElementById('totalDuration');
     total.innerHTML = `Gesamtzeit: ${recipe.totalduration}`;
 }
+
 
 window.onload = function() {
     includeHTML();
