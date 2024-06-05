@@ -222,4 +222,14 @@ button {
     .info-section h2 {
         font-size: 1.2em;
     }
+
+    .pfannewok {
+        
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+
+    .pfannewok img {
+        width: 160px;
+    }
 }
