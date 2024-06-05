@@ -84,8 +84,10 @@ button {
 }
 
 .navLinks a:hover {
+    font-weight: bold;
     color: #008001;
-    text-decoration: underline;
+    text-decoration: underline 3px;
+    text-underline-offset: 10px;
 }
 
 .navLinks a:active {
