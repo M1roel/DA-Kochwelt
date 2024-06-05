@@ -9,16 +9,6 @@ body {
     margin: 0;
 }
 
-footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: row;
-    background-color: #403B3B;
-    height: 180px;
-    padding: 10px 230px;
-}
-
 h2 {
     margin: 0;
     font-weight: 500;
