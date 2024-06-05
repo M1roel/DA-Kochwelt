@@ -1,17 +1,18 @@
 @font-face {
   font-family: "Raleway";
   src: url("../fonts/Raleway-Regular.ttf") format("woff2");
-  font-weight: 400;
 }
 
 * {
   text-align: center;
+  margin: 0;
 }
 
 .impressum {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   width: 100%;
   font-family: "Raleway";
   font-size: 20px;
@@ -27,10 +28,9 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 90%;
+  width: 100%;
   font-family: "Raleway";
   font-size: 20px;
-  margin: 20px;
 }
 
 .datenschutz li {
