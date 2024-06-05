@@ -3,9 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="img/favicon.png" type="image/png">
-    <link href="../src/css/style.css" rel="stylesheet" type="text/css"/>
+    <link rel="icon" href="img/favicon.png" type="image/png" />
+    <link href="../src/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="../src/css/header.css" rel="stylesheet" type="text/css" />
     <script src="../src/js/w3c.js"></script>
+    <script src="../src/js/header.js" defer></script>
     <script src="../src/js/script.js"></script>
 
     <title>Kochwelt - Home</title>
@@ -13,7 +15,9 @@
 
   <body onload="includeHTML()">
     <div w3-include-html="../src/templates/header.html"></div>
-
+    <a href="javascript:void(0);" class="icon hamburger-menu-button">
+      <i class="fa fa-bars"></i>
+    </a>
     <section class="main-container">
       <img class="main-img" src="img/brownies.png" alt="brownies" />
       <div class="main-container-text">

@@ -7,6 +7,8 @@
     <link rel="icon" href="img/favicon.png" type="image/png">
     <link href="../src/css/style.css" rel="stylesheet" type="text/css">
     <link href="../src/css/contact.css" rel="stylesheet" type="text/css">
+    <link href="../src/css/header.css" rel="stylesheet" type="text/css" />
+    <script src="../src/js/header.js" defer></script>
     <script src="../src/js/w3c.js"></script>
     <script src="../src/js/contact.js"></script>
     
@@ -16,7 +18,9 @@
 <body>
 
     <div w3-include-html="../src/templates/header.html"> </div>
-
+    <a href="javascript:void(0);" class="icon hamburger-menu-button">
+        <i class="fa fa-bars"></i>
+      </a>
     <form class="kontakt" onsubmit="return handleSubmit(event)">
         <label for="name">Name: </label><br>
         <input type="text" id="name" name="name" placeholder="Ihr Name..."><br>
