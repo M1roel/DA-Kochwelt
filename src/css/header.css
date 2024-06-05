@@ -43,3 +43,51 @@ header {
 .navLinks a:active {
     color: #008001;
 }
+
+.hamburger-menu-button {
+    display: none;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.navLinks.open {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navLinks.open a {
+    margin: 10px;
+}
+
+@media (max-width: 880px) {
+    header {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .header-logo {
+        padding: 0;
+    }
+
+    .navLinks {
+        padding: 0;
+    }
+}
+
+@media (max-width: 400px) {
+    header {
+        flex-direction: row;
+    }
+    .navLinks {
+        display: none;
+    }
+
+    .hamburger-menu-button {
+        display: block;
+    }
+}
