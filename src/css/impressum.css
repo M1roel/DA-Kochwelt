@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url("../fonts/Raleway-Regular.ttf") format("woff2");
+    font-weight: 400;
+  }
+
+* {
+    text-align: center;
+}
+
+.impressum {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-family: "Raleway";
+    font-size: 20px;
+    margin-top: 30px;
+  }
+
+  .datenschutz {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    font-family: "Raleway";
+    font-size: 20px;
+    margin: 70px;
+  }
+
+  .datenschutz li {
+    text-align: left;
+  }
+
+  .datenschutz h2,
+  .datenschutz h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
