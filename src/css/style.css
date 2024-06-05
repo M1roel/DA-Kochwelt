@@ -31,7 +31,12 @@ button {
   background-color: #008001;
   color: white;
   border: none;
+  border-radius: 5px;
   cursor: pointer;
+}
+
+button:hover {  
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
 
 .main-container {
@@ -53,6 +58,12 @@ button {
   width: 480px;
   object-fit: cover;
   border-radius: 8px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  transition: transform 0.125s ease-in-out;
+}
+
+.main-img:hover {
+  transform: scale(1.1);
 }
 
 .main-container-text {
@@ -105,6 +116,15 @@ button {
   align-items: center;
 }
 
+.more-reciep-inner-container img {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  transition: transform 0.125s ease-in-out;
+}
+
+.more-reciep-inner-container img:hover {
+  transform: scale(1.1);
+}
+
 .info-section {
   height: 320px;
   text-align: center;
@@ -130,6 +150,7 @@ button {
   height: 160px;
   width: 160px;
   border-radius: 8px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
 
 .info-left {
@@ -142,6 +163,10 @@ button {
 #weiterlesen-btn {
   margin-top: 30px;
   height: 30px;
+}
+
+#weiterlesen-btn:hover {  
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
 
 .pfannewok {
