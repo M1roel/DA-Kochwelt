@@ -1,112 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../src/css/content.css" rel="stylesheet" type="text/css" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../src/css/content.css" rel="stylesheet" type="text/css">
-    
     <script src="../src/js/w3c.js"></script>
     <script src="../src/js/rezept-borna.js"></script>
     <script src="../src/js/script.js"></script>
 
     <title>Seehecht in Spinat-Sahne-Soße</title>
+  </head>
 
-
-</head>
-
-
-<body>
-
-    <div w3-include-html="../src/templates/header.html"> </div>
-
+  <body>
+    <div w3-include-html="../src/templates/header.html"></div>
 
     <section class="top-section">
-        <h1>Seehecht in Spinat-Sahne-Soße</h1>
-        <img class="top-image" src="./img/seehecht.jpg" alt="Bild vom Gericht">
-
+      <h1>Seehecht in Spinat-Sahne-Soße</h1>
+      <img class="top-image" src="./img/seehecht.jpg" alt="Bild vom Gericht" />
     </section>
 
     <section class="data-section">
-        <div class="data-container">
-            <div class="data-field">
-                <img src="img/clock-regular.svg" alt="Clock">
-                <div class="prepDuration"></div>
-            </div>
-            <div class="data-field">
-                <img src="img/brain-solid.svg" alt="Brain">
-                Simpel
-            </div>
-            <div class="data-field">
-                <img src="img/calendar-alt-regular.svg" alt="Calendar">
-                18.03.2021
-            </div>
+      <div class="data-container">
+        <div class="data-field">
+          <img src="img/clock-regular.svg" alt="Clock" />
+          <div class="prepDuration"></div>
         </div>
-        <div class="separator"></div>
-
+        <div class="data-field">
+          <img src="img/brain-solid.svg" alt="Brain" />
+          Simpel
+        </div>
+        <div class="data-field">
+          <img src="img/calendar-alt-regular.svg" alt="Calendar" />
+          18.03.2021
+        </div>
+      </div>
+      <div class="separator"></div>
     </section>
 
     <section class="recipe-section">
-        <div class="portion-container">
-            <label class="p-r-16">Zutaten für</label>
-            <input id="portions" class="input" type="number" min="1" max="20" value="1"></input>
-            <button class="p-button" onclick="addAll()">Portionen</button>
-        </div>
+      <div class="portion-container">
+        <label class="p-r-16">Zutaten für</label>
+        <input
+          id="portions"
+          class="input"
+          type="number"
+          min="1"
+          max="20"
+          value="1"
+        />
+        <button class="p-button" onclick="addAll()">Portionen</button>
+      </div>
 
-        <table id="table">
-
-        </table>
-
+      <table id="table"></table>
     </section>
 
     <section class="instructions-section">
-        <h2>Zubereitung</h2>
-        <div class="instruction-container">
-            <div class="data-field">
-                <img src="../public/img/clock-regular.svg" alt="Clock">
-                <div class="prepDuration"></div>
-            </div>
-            <div class="data-field">
-                <img src="../public/img/clock-regular.svg" alt="Clock">
-                <div id="totalDuration"></div>
-            </div>
+      <h2>Zubereitung</h2>
+      <div class="instruction-container">
+        <div class="data-field">
+          <img src="../public/img/clock-regular.svg" alt="Clock" />
+          <div class="prepDuration"></div>
         </div>
+        <div class="data-field">
+          <img src="../public/img/clock-regular.svg" alt="Clock" />
+          <div id="totalDuration"></div>
+        </div>
+      </div>
 
-        <p>
-            1.Kartoffeln backen:
-            Backofen auf 200°c Umluft vorheizen.
-            Kartoffen in Salten schneiden, mit Salz, Pfeffer und Olivenöl würzen.
-            Auf ein Backblech geben und in den Ofen für 25 - 30 min. Dabei Platz für die Auflaufform lassen.       
-        </p><br>
-        <p>
-            2.Soße vorbereiten
-            Kochsahne, Gemüsebrühe, ca. 30g Wasser, Salz und Pfeffer in einen Topf geben.
-            Aufkochen lassen und dabei rührend vermengen. Topf vom Herd nehmen.
-            Babyspinat (ganz oder geschnitten) zugeben und vermengen.
-        </p><br>
-        <p>
-            3. Auflauf vorbereiten
-            Soße abschmecken und in passende Auflaufform geben.
-            Seehecht auf die Soße legen.
-            Hartkäse mit Semmelbrösel und gegebenfalls Gewürzen vermengen und auf dem Fisch verteilen.
-            Auflaufform zu den Kartoffen in den Ofen legen.
-
-        </p><br>
-        <p>
-            Nach ca 15 min sollte der Fisch gar und die Brösel goldbraun sein.
-            Dann kann serviert werden.
-        </p>
+      <p>
+        1.Kartoffeln backen: Backofen auf 200°c Umluft vorheizen. Kartoffen in
+        Salten schneiden, mit Salz, Pfeffer und Olivenöl würzen. Auf ein
+        Backblech geben und in den Ofen für 25 - 30 min. Dabei Platz für die
+        Auflaufform lassen.
+      </p>
+      <br />
+      <p>
+        2.Soße vorbereiten Kochsahne, Gemüsebrühe, ca. 30g Wasser, Salz und
+        Pfeffer in einen Topf geben. Aufkochen lassen und dabei rührend
+        vermengen. Topf vom Herd nehmen. Babyspinat (ganz oder geschnitten)
+        zugeben und vermengen.
+      </p>
+      <br />
+      <p>
+        3. Auflauf vorbereiten Soße abschmecken und in passende Auflaufform
+        geben. Seehecht auf die Soße legen. Hartkäse mit Semmelbrösel und
+        gegebenfalls Gewürzen vermengen und auf dem Fisch verteilen. Auflaufform
+        zu den Kartoffen in den Ofen legen.
+      </p>
+      <br />
+      <p>
+        Nach ca 15 min sollte der Fisch gar und die Brösel goldbraun sein. Dann
+        kann serviert werden.
+      </p>
     </section>
 
     <section class="creator-section">
-        <h3>Rezept erstellt von</h3>
-        <div class="creator-container">
-            <img class="icon-profil" src="img/profile.png" alt="Profilbild">
-            <p id="name">Borna</p>
-        </div>
+      <h3>Rezept erstellt von</h3>
+      <div class="creator-container">
+        <img class="icon-profil" src="img/profile.png" alt="Profilbild" />
+        <p id="name">Borna</p>
+      </div>
     </section>
 
     <div w3-include-html="../src/templates/footer.html"></div>
-</body>
-
+  </body>
 </html>
