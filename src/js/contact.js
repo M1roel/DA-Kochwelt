@@ -4,6 +4,11 @@ function handleSubmit(event) {
     const contactMail = document.getElementById('mail').value.trim();
     const contactMessage = document.getElementById('message').value.trim();
 
+    if (!validateEmail(contactMail)) {
+        showInfo('Bitte geben Sie eine gültige E-Mail-Adresse ein.', 'error');
+        return;
+    }
+
     if (contactName && contactMail && contactMessage) {
         clear();
     } else {
@@ -11,6 +16,10 @@ function handleSubmit(event) {
     }
 }
 
+function validateEmail(email) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+}
 
 function clear() {
     const contactName = document.getElementById('name');
