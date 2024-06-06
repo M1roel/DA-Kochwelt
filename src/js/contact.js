@@ -16,10 +16,12 @@ function handleSubmit(event) {
     }
 }
 
+
 function validateEmail(email) {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
 }
+
 
 function clear() {
     const contactName = document.getElementById('name');
