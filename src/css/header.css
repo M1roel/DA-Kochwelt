@@ -59,7 +59,7 @@
     padding: 10px;
     margin-bottom: 20px;
     background: none;
-    color: white;
+    color: rgb(0, 0, 0);
   }
   
   .navLinks.open {
@@ -95,6 +95,7 @@
     }
 
     .navLinks.open {
+        display: flex;
         flex-direction: column;
         align-items: center;
       }

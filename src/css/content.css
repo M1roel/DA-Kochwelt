@@ -241,5 +241,10 @@ table tbody:nth-child(even) {
   .input {
     text-align: center;
     margin-bottom: 10px;
+    border-radius: 8px;
+  }
+
+  .p-button {
+    border-radius: 8px;
   }
 }
