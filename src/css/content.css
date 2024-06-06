@@ -149,6 +149,7 @@ table tbody:nth-child(even) {
   align-items: center;
   justify-content: left;
   flex-direction: row;
+  margin-bottom: 10px;
 }
 
 .instruction-container p {
