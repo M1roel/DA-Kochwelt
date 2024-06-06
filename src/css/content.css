@@ -192,7 +192,7 @@ table tbody:nth-child(even) {
 
 .recipe-info {
   position: fixed;
-  top: 10%;
+  top: 35%;
   left: 50%;
   transform: translateX(-50%);
   border: 1px solid #000000;
