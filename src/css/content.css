@@ -192,7 +192,7 @@ table tbody:nth-child(even) {
 
 .recipe-info {
   position: fixed;
-  top: 35%;
+  top: 10%;
   left: 50%;
   transform: translateX(-50%);
   border: 1px solid #000000;
@@ -263,5 +263,11 @@ table tbody:nth-child(even) {
 
   .p-button {
     border-radius: 8px;
+  }
+}
+
+@media (max-width: 470px) {
+  .recipe-info {
+    top: 35%;
   }
 }
