@@ -186,6 +186,22 @@ table tbody:nth-child(even) {
   font-weight: 150;
 }
 
+.d-none {
+  display: none;
+}
+
+.recipe-info {
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid #000000;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  z-index: 997;
+}
+
 @media (max-width: 600px) {
   .top-section {
     justify-content: center;
