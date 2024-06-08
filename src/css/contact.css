@@ -9,20 +9,27 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 108px 50px;
+    margin: 56px 50px;
 }
 
 .kontakt textarea,
 .kontakt input {    
     font-family: "Raleway";
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    margin: 10px;
     resize: none;
     border-radius: 5px;
     border: unset;
-    width: 200px;
+    width: 50vw;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     cursor: pointer;
   }
+
+::placeholder {
+  text-align: center;
+}
 
   .button {
     padding: 8px 32px;
