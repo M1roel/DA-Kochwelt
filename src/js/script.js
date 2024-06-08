@@ -9,8 +9,8 @@ function addAll() {
   let port = document.getElementById("portions").value;
   portions = parseInt(port, 10);
 
-  if(port === '' || port === '0') {
-    showInfo('Bitte geben Sie eine Portionenzahl ein.')
+  if(port === '' || port <= 0 || port > 10) {
+    showInfo('Bitte geben Sie eine Portionenzahl zwischen 1 und 10 ein.')
     return;
   }
 
