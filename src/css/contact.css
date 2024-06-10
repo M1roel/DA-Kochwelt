@@ -58,9 +58,27 @@
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     z-index: 997;
   }
-  
+
   .max-width {
     max-width: 1920px;
     margin-left: auto;
     margin-right: auto;
   }
+
+  /* Scrollbar Style */
+::-webkit-scrollbar {
+  width: 25px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border: 6px solid #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

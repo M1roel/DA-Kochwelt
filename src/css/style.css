@@ -199,6 +199,24 @@ button:hover {
   margin-right: auto;
 }
 
+/* Scrollbar Style */
+::-webkit-scrollbar {
+  width: 25px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border: 6px solid #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 @media (max-width: 800px) {
   .recipe-section {
     flex-direction: column;
