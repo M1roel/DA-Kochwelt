@@ -193,6 +193,12 @@ button:hover {
   text-align: left;
 }
 
+.max-width {
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @media (max-width: 800px) {
   .recipe-section {
     flex-direction: column;

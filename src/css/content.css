@@ -202,6 +202,12 @@ table tbody:nth-child(even) {
   z-index: 997;
 }
 
+.max-width {
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @media (max-width: 600px) {
   .top-section {
     justify-content: center;
