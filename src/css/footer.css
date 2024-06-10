@@ -5,16 +5,23 @@ footer {
     flex-direction: row;
     background-color: #403B3B;
     height: 180px;
-    padding: 10px 230px;
+    padding: 10px 0px;
 }
 
 .svg-icons svg {
     cursor: pointer;
 }
 
+
+
 @media (max-width: 700px) {
     footer {
+        justify-content: center;
         width: auto;
         padding: 0;
+    }
+
+    .footer-logo {
+        display: none;
     }
 }
